@@ -1,0 +1,128 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:#e3eef8;
+    font-family: "Roboto", sans-serif;
+}
+
+nav {
+    margin: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+
+} 
+
+.Logo {
+    width: 6rem;
+    border-radius: 10ch;
+    outline: solid 2px black;
+    
+}
+
+ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+}
+
+.links > ul > li > a {
+    color:black;
+}
+
+.links > li > a {
+    font-size: 5rem;
+    font-style: italic;
+    color:black;
+}
+
+.fourlinks { 
+    display:flex;
+}
+
+.fourlinks > li { 
+    margin: 0 1rem 0 1rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 10rem;
+}
+
+#burguer {
+    cursor: pointer;
+}
+
+@media screen and (min-width: 1024px) {
+    #burguer {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .fourlinks {
+        position: absolute;
+        text-align: center;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: fit-content;
+        margin: 8rem auto auto auto;
+    }
+}
+
+.Logofooter {
+    width: 4rem;
+    border-radius: 10ch;
+    outline: solid 2px black;
+    
+}
+
+footer {
+    background-color:rgb(226, 212, 192);
+    padding: 4rem;
+    margin: 6rem auto auto auto;
+    display: flex;
+    justify-content:center ;
+}
+
+footer > div {
+    display: flex;
+    align-items: center;
+    margin: 3 6rem 3 6rem;
+}
+
+.iconsredes {
+    display: flex;
+}
+
+.iconsredes > li{
+    margin: 0 1rem 0 1rem;
+}
+
+.iconinsta {
+    width: 2rem;
+}
+
+.iconface {
+    width: 2rem;
+}
+
+.iconyou {
+    width: 2rem;
+}
